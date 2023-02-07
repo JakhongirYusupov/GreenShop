@@ -1,0 +1,13 @@
+$primary-light-color: #FFFFFF;
+$primary-green-color: #46A358;
+$primary-grey-color: #3D3D3D;
+
+@mixin fontStyles($weight, $size, $line, $color) {
+  font: {
+    weight: $weight;
+    size: $size;
+  }
+
+  line-height: $line;
+  color: $color;
+}

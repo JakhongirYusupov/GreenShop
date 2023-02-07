@@ -1,0 +1,77 @@
+@import "../../utils/index.scss";
+
+.header {
+  padding: 26px 0 0;
+
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+  }
+
+  &-bottom-border {
+    border-bottom: 0.3px solid rgba(70, 163, 88, 0.5);
+  }
+
+  &-logo img {
+    width: 150px;
+    height: 34px;
+    object-fit: contain;
+  }
+
+  &-navLinks {
+    height: 45px;
+    display: flex;
+    // align-items: center;
+    gap: 50px;
+
+    &-item {
+      margin-top: 6px;
+      @include fontStyles(400, 16px, 20px, $primary-grey-color);
+
+      &:hover {
+        border-bottom: 3px solid $primary-green-color;
+      }
+    }
+  }
+
+  &-actions {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    &>div {
+      cursor: pointer;
+    }
+
+    &-search-icon {
+      width: 20px;
+      height: 20px;
+    }
+
+    &-cart>img {
+      width: 29px;
+      height: 24px;
+    }
+
+    &-login {
+      padding: 7px 17px 8px 18px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      border-radius: 6px;
+      background-color: $primary-green-color;
+
+      &-icon {
+        width: 20px;
+        height: 20px;
+        color: $primary-light-color;
+      }
+
+      &>span {
+        @include fontStyles(500, 16px, 20px, $primary-light-color)
+      }
+    }
+  }
+}

@@ -1,7 +1,10 @@
-import { Home } from '../../components';
+import { Header, Home } from '../../components';
 
 export default function HomePage() {
   return (
-    <Home />
+    <>
+      <Header />
+      <Home />
+    </>
   )
 }

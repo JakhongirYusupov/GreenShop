@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "House Plants"
+  },
+  {
+    "id": 2,
+    "name": "Potter Plants"
+  },
+  {
+    "id": 3,
+    "name": "Seeds"
+  },
+  {
+    "id": 4,
+    "name": "Small Plants"
+  },
+  {
+    "id": 5,
+    "name": "Big Plants"
+  },
+  {
+    "id": 6,
+    "name": "Succulents"
+  },
+  {
+    "id": 7,
+    "name": "Trerrariums"
+  },
+  {
+    "id": 8,
+    "name": "Gardening"
+  },
+  {
+    "id": 9,
+    "name": "Accessories"
+  }
+]

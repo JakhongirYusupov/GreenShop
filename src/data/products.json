@@ -1,0 +1,75 @@
+[
+  {
+    "id": 1,
+    "name": "Barberton Daisy",
+    "price": "$119.00",
+    "categoryId": 1,
+    "size": "small",
+    "img": "https://s3-alpha-sig.figma.com/img/586c/8523/1ab58d21463d86aa3768f5c6c78f8a1f?Expires=1676851200&Signature=i5Rsvc655HEJLxOOo2rJP4NHu0QyXg~mxm5S-fCQq4n~Gh9u65Qb7w6AlleJspxE1UE3ryMoraqkavm1cclIxrCE1zoeQ4w8NwTizLNWE4f-52iGOTH36kkgH-Bx9iQjkFmikMcfyRA52Iah~BEotFeY12fM6fA66HQEcrF4X5tkhgqszskeI2ph-mUhnUFgrjEzky3Ch2fKkCDsc2fHEloerj4rEGEzWClyI2MdxZTHj-QTy4YOE7J-ryIIWL8JYvjADV3SnySk1a1FvT--lYgsottau2oLwT1AYNt0BDLhDzYSWBeUDAb4xC4aqNwEpYAOkYx-k8RAnycWsbW9xQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+  },
+  {
+    "id": 2,
+    "name": "Angel Wing Begonia",
+    "price": "$169.00",
+    "categoryId": 1,
+    "size": "small",
+    "img": "https://s3-alpha-sig.figma.com/img/4826/f3a4/1a2148d881d8376b26471cced915b1bb?Expires=1676851200&Signature=kX9-hfKxFdrpOaicpogfq6MXb1f-uI5WdpEbzT2m86FlYejC8UqcxSSjXxwusT6Tmkoq3pWEJkYM608pDLHC47gdUyMrsD5FvT0jlxE87heTLFw2rFfnSbjimaJBtOe87uOf5lOlYXKMFow0567L6YXYmjje9tPVJ09IvYrTFhGolQk01fdCEWaPPUG8kSYEjokCdjQrxXGhcDhIY-zfwvVXRBT2OFrsub30niOIVj3~ntrkJCh5XA~uomdK3PztavgP8c7gY6seuJyQ2NDcoKac-oMLbL9q2fk8KHeG7Ea4fiQc~aCo4leDShnG3t6R~WLleNkUx4pF6y2jdfqwyQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+  },
+  {
+    "id": 3,
+    "name": "African Violet",
+    "price": "$199.00",
+    "categoryId": 2,
+    "size": "medium",
+    "sale": "$229.00",
+    "img": "https://s3-alpha-sig.figma.com/img/7c59/7aa9/1ee5df5d1fd65d8184246c0c9918f920?Expires=1676851200&Signature=OdjIfD1DVDra7A6FSYpdaK7DLykshPyl9pTl83U1f~FHHNVYgNzu3aTXZp6pAD7lJjmyftmYlg~bJsA2QS7zGSa5S7p8roJcAB7ZLoZhuqbvhpGRFIHCDof2VbSM9l30TyyEWlgTd795vb8lcM7oMSz4kgnsL5nX1Yvb1YDpSTEs6vVPK9YQ25YH9Mauu9tkXhcvUjvoQXv--NjrcHQ2icN8QuM0eVjbViUORJy64dvSURZhWivxEU-5mVMzQ6KYbmKi099rL9NN9QhxVog6Rb-vdjOiV7PtvMaLeob0vJLOpVa4YiyBhCU09XDzRLF~wSU~iWuqf8JvqlKdTQ3HGQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+  },
+  {
+    "id": 4,
+    "name": "Beach Spider Lily",
+    "price": "$129.00",
+    "categoryId": 3,
+    "size": "large",
+    "img": "https://s3-alpha-sig.figma.com/img/4575/e3df/52fa214db1f3ce519277860c13b11e21?Expires=1676851200&Signature=dZfyvVLU0BVb45lQc5C-WK8EQuMVI5RoJL~kWnCk~t-Pynx3akNO3eG2H6W~0dREQqP3chwDuBRM3Nvew6gyz911x3zRKAxAbXOQro33uIJQ0DQo9bjhJmq6Frow0Rpq4YsjiLRYptjMWYbOBI58FVTNGVl-vo-rjy1aecF-PIiWB4ke~61PEgSL41ywhxECiIze3DCvhADTUF0zXLCxnryoQvx64XoCYJmtIMWQSWZr7RY3rguxsNP6EITOQGClwQ~I-hoF~C7y4mj~aGNzGgYrn~WOl3-PF7lhWny5kZ34NzNtBtxAZ7cvEH~fEW9oXOjvKvBCKgbndyuGdjIC2A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+  },
+  {
+    "id": 5,
+    "name": "Blushing Bromeliad",
+    "price": "$139.00",
+    "categoryId": 3,
+    "size": "large",
+    "img": "https://s3-alpha-sig.figma.com/img/9531/c63d/3f618aefdf1ccb10a5aa0e2d00f45d0b?Expires=1676851200&Signature=FMHmMbNb26Pwmbjq1vrcR4dEGeL6P2hJSVnJFxwiJdKAUJUJfyCeoljJiGtTIHVTHWzwX11HZcE7kPJPIC7hud4eEWlCv5p3POSqeBhLbGnlNcoviuSs99S4ZTX1OUcjrRiH8VJgIzFO5BV11fz2HrsQv52aIjiOW4OO7MEuwNFWI4jZS7vY6PQVsTlfNUt19b5vVssesj8oKz7kAwgtTIaHZdKzSdBShoCvRJCI8qqnapVOn8Ou1PTx5YTOLArinqGcxOvVWqybPILdb~09DY9RYqsVAFF81vpVlvNaFAysXj2DpMXzQe8VZrku6Eoq1vd74rlRtjgNvDaz7-bNzw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+  },
+  {
+    "id": 6,
+    "name": "Aluminum Plant",
+    "price": "$179.00",
+    "categoryId": 7,
+    "size": "medium",
+    "img": "https://s3-alpha-sig.figma.com/img/744c/96db/a60207fabc5a7d29f8801ecf6b4e2aed?Expires=1676851200&Signature=pBJHQTlHW8Y3C2U5ThNAdAmzvw0vwglYwFxG-aVXH8v~ldhHbXu7dajhFjr2oOjUV6xoPrG-zNAFEHmkOJC3YeT0AUr3bt0xa2uHkvRibLG0rH2F61wUCPaLTCN1alTRQGC~LyE7pFhXxpQSDqXA5qGH-UoS1IsuJMvmzFttlgO6XVG9I8qpivt-nMtEY9xYk3dzXvx6UuDAfD5MrQebltz3DhOAKA8eDrBFw97jB~9r76brxxP-MZQnCEK3T3ndPj7zkuoxj3hQwofter-KLdPUcn~vkXDa7pgNZaStcvdd-88-x~yONTi16FxFcFw9Pfu8FbU388SFHbUY6tzNzQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+  },
+  {
+    "id": 7,
+    "name": "Bird's Nest Fern",
+    "price": "$99.00",
+    "categoryId": 5,
+    "size": "small",
+    "img": "https://s3-alpha-sig.figma.com/img/9957/e153/a59c050946e77e8fc7e11525e87c4678?Expires=1676851200&Signature=FlsCqp3fBO3ZdTC736zVpndy-8HuO-nQ5dCvFZ-PA9KUQkqUTH9MBpJMJ7r-Cf~-QEodmzTvhDXvnxGH0bmRbrsDio3fqVKKOrtDzgScby78jkZB~OpfhmMIcQPrTrqX-U291bCkCeJDnuSY8wxrGdK-nw8ulqpYFRuYzgs3ndwe5xFcLFQQ421QI8ke~HExyF~txj5F5BwvnshePgxhLd1BBhtnQoXmFyjknmrh0EFgwujM-sBXHFGWfv-gc95E2Cdhk9rlc~ilzWbSyFynHQwniHKnyXGq0ISBlcQ~-CYTUvWlVDmn-UNZsrNHbMv2V0lq6MRYQY-IZOETHnrTTg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+  },
+  {
+    "id": 8,
+    "name": "Broadleaf Lady Palm",
+    "price": "$59.00",
+    "categoryId": 4,
+    "size": "large",
+    "img": "https://s3-alpha-sig.figma.com/img/78e9/e6c1/90effae17498640571679183299f774e?Expires=1676851200&Signature=pXLcZWAhBJ-z4J6BrQH87CZ2y0lQRoBdb-5sTqWKKcrHjjf3TRk96CWBZz~DQfn6Rcyn3~r-2dAEh5V~ytGfsCkCMxF5V8P5bCnuvgRfezfkx5~5ymv1ngDOea9pCL5K~qrktrsCxFtZ-LlXcswjn2A7GsgDSWjUSqz5bIQ74xyeKxzhKUjUspAYvAqW89NPEDxIquBISJbqHjW7w0uC8oe5vjf6vxh1TeA2fDdx00DntAIKoZ5tRsfgH4wsiNDj91ZV06gWkkRuo-WDI~tNGPhxC7zplg7Pul5KhaAXemZeEFOdssN0m9q1GBMxpiDYdvybfnSR9Opdk7DpsZ8YXg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+  },
+  {
+    "id": 9,
+    "name": "Chinese Evergreen",
+    "price": "$39.00",
+    "categoryId": 6,
+    "size": "small",
+    "img": "https://s3-alpha-sig.figma.com/img/5219/e659/b8a1d488abd136ce27f86ab3da3ceb37?Expires=1676851200&Signature=Q1~9GQVKm2joFUG~NBAXZH~PApMp3agLEFyk~QtVDsxFoUY6iNl-Y-niNKFLaLpqsjaLjc1YXnAbZue1i6GRE~80xJDCc8ub0XGh~KopR4aQ5lxIclPVYYb3n9RvzkC4uiHtbE2MS5UFsA8nviWvly2FzO~9s07mLqjYRhn0J7AsgWylZksMsP0wA~~JJas9j9PVOByVJu2b6eequX4gVBjycxUUSB6MV1u8YABFnB~uZbEZKmvrDWGDPXfgwgVLFlCqgOM-6dkhpq5vb9y0UfUx5iDKGZr4AWZ6WuN8wE9AJLekJO6iysQofjc0gXEJvmVKfpX69gWoxUUIAZ8yAg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+  }
+]
