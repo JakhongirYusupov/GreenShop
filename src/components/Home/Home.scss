@@ -5,19 +5,95 @@
   @include fontStyles(700, 18px, 16px, $primary-grey-color);
 }
 
+.swiper-slide {
+  height: 450px !important;
+}
+
 .main {
+
+  &-hero {
+    margin-top: 12px;
+    min-height: 450px;
+    background: linear-gradient(97.77deg, rgba(245, 245, 245, 0.5) -23.46%, rgba(245, 245, 245, 0.5) 107.51%);
+
+    &-wrapper {
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      &-desc {
+        margin: 68px 0 0 43px;
+
+        &>h3 {
+          margin-bottom: 7px;
+          @include fontStyles(500, 14px, 16px, $primary-grey-color);
+          letter-spacing: 0.1em;
+        }
+
+        &>h1 {
+          font-style: normal;
+          margin-bottom: 5px;
+          max-width: 530px;
+          @include fontStyles(900, 70px, 70px, $primary-grey-color);
+
+          &>b {
+            color: $primary-green-color;
+          }
+        }
+
+        &>p {
+          max-width: 557px;
+          margin-bottom: 44px;
+          @include fontStyles(400, 14px, 24px, #727272);
+        }
+
+        &>a {
+          padding: 10px 26px;
+          @include fontStyles(700, 16px, 20px, $primary-light-color);
+          background: $primary-green-color;
+          border-radius: 6px;
+        }
+      }
+
+      &-img {
+        width: 518px;
+        position: relative;
+        background: linear-gradient(97.77deg, rgba(245, 245, 245, 0.5) -23.46%, rgba(245, 245, 245, 0.5) 107.51%);
+        overflow: hidden;
+
+        &-little {
+          position: absolute;
+          bottom: 8px;
+          left: 56px;
+          width: 135px;
+          height: 135px;
+          mix-blend-mode: multiply;
+        }
+
+        &-big {
+          position: absolute;
+          left: 0;
+          top: -40px;
+          width: 518px;
+          height: 518px;
+          object-fit: cover;
+          mix-blend-mode: multiply;
+        }
+      }
+    }
+  }
+
   &-product {
     margin-top: 46px;
     display: flex;
-    gap: 50px;
+    gap: 54px;
 
     &-sorting {
       width: 310px;
 
       &-items {
         padding: 14px 24px 19px 18px;
-        background: #FBFBFB;
-
+        background: $primary-background-color;
       }
 
       &-category {
@@ -139,24 +215,80 @@
       &-items {
         display: grid;
         grid-template-rows: repeat(3, 350px);
-        grid-template-columns: repeat(3, 250px);
+        grid-template-columns: repeat(3, 258px);
         row-gap: 70px;
-        column-gap: 41px;
+        column-gap: 33px;
       }
 
       &-item {
-        background-color: antiquewhite;
 
         &-img {
+          position: relative;
           margin-bottom: 12px;
           width: 258px;
           height: 300px;
+          background-color: $primary-background-color;
+          border-top: 1px solid $primary-light-color;
+          transition: 0.5s;
+          overflow: hidden;
+
+          &:hover {
+            transition: 0.5s;
+            border-color: $primary-green-color;
+
+            .main-product-list-item-img-actions {
+              transition: 0.5s;
+              bottom: 7px;
+            }
+          }
 
           &>img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
             mix-blend-mode: multiply;
+          }
+
+          &-sale {
+            position: absolute;
+            top: 14px;
+            left: 0;
+            padding: 8px 7px;
+            @include fontStyles(500, 16px, 16px, $primary-light-color);
+            background-color: $primary-green-color;
+          }
+
+          &-actions {
+            display: flex;
+            gap: 10px;
+            position: absolute;
+            left: 50%;
+            bottom: -40px;
+            transform: translateX(-50%);
+            transition: 0.5s;
+
+            &>div {
+              width: 35px;
+              height: 35px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-color: $primary-light-color;
+              border-radius: 4px;
+              cursor: pointer;
+            }
+
+            &-cart {
+              width: 20px;
+              height: 20px;
+              // object-fit: contain;
+            }
+
+            &-like,
+            &-search {
+              width: 20px;
+              height: 20px;
+            }
           }
         }
 
@@ -168,6 +300,196 @@
 
           &>strong {
             @include fontStyles(700, 18px, 16px, $primary-green-color);
+          }
+
+          &>span {
+            margin-left: 16px;
+            text-decoration: line-through;
+            @include fontStyles(400, 18px, 16px, #A5A5A5);
+          }
+        }
+      }
+
+      &-pagination {
+        margin-top: 90px;
+        display: flex;
+        justify-content: end;
+
+        &-wrapper {
+          display: flex;
+          gap: 10px;
+        }
+
+        &-item {
+          width: 35px;
+          height: 35px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 4px;
+          background-color: $primary-light-color;
+          border: 1px solid #E5E5E5;
+          cursor: pointer;
+
+          &>span {
+            @include fontStyles(300, 18px, 16px, $primary-grey-color);
+          }
+        }
+      }
+    }
+  }
+
+  &-findMore {
+    margin-top: 146px;
+    display: flex;
+    gap: 28px;
+
+    &-item {
+      position: relative;
+      width: 100%;
+      max-width: 586px;
+      height: 250px;
+      padding: 30px 20px;
+      background: $primary-background-color;
+      display: flex;
+
+      &-img {
+        position: absolute;
+        height: 280px;
+        width: 280px;
+        top: -40px;
+        left: 0;
+
+        &>img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          mix-blend-mode: multiply;
+        }
+      }
+
+      &-desc {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+
+        &>h2 {
+          margin-bottom: 16px;
+          max-width: 180px;
+          text-align: end;
+          @include fontStyles(900, 20px, 26px, $primary-grey-color);
+        }
+
+        &>p {
+          max-width: 300px;
+          text-align: end;
+          @include fontStyles(400, 14px, 22px, $primary-grey-color);
+        }
+
+        &-hidden {
+          display: none;
+        }
+
+        &>a {
+          margin-top: 16px;
+          padding: 6px 22px;
+          display: flex;
+          align-items: center;
+          @include fontStyles(400, 12px, 20px, $primary-light-color);
+          border-radius: 6px;
+          background-color: $primary-green-color;
+
+          &>svg {
+            margin-left: 6px;
+            width: 20px;
+            height: 20px;
+            // transform: rotateZ(-90deg);
+            transition: 0.5s;
+          }
+        }
+      }
+
+      &-desc:hover .main-findMore-item-desc-hidden {
+        display: block;
+      }
+
+      &-desc:hover .main-findMore-item-desc-icon {
+        transform: rotateZ(-90deg);
+        transition: 0.5s;
+      }
+    }
+  }
+
+  &-ourBlog {
+    margin-top: 138px;
+
+    &-title {
+      margin-bottom: 35px;
+
+      &>h2 {
+        margin-bottom: 15px;
+        text-align: center;
+        @include fontStyles(700, 30px, 16px, $primary-grey-color);
+      }
+
+      &>p {
+        text-align: center;
+        @include fontStyles(400, 14px, 24px, #727272);
+      }
+    }
+
+    &-products {
+      display: flex;
+      gap: 44px;
+
+      &-item {
+        width: 268px;
+
+        &-img {
+          width: 268px;
+          height: 195px;
+
+          &>img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+
+        &-desc {
+          padding: 9px 31px 13px 15px;
+          background-color: $primary-background-color;
+
+          &>span {
+            margin-bottom: 4px;
+            @include fontStyles(500, 14px, 16px, $primary-green-color);
+          }
+
+          &>h3 {
+            margin-bottom: 4px;
+            @include fontStyles(700, 20px, 26px, $primary-grey-color);
+          }
+
+          &>p {
+            margin-bottom: 9px;
+            @include fontStyles(400, 14px, 20px, #727272);
+          }
+
+          &>a {
+            @include fontStyles(900, 14px, 16px, $primary-grey-color);
+            display: flex;
+            align-items: center;
+
+            &>svg {
+              width: 16px;
+              height: 16px;
+              margin-left: 3px;
+            }
+
+            &:hover {
+              color: $primary-green-color;
+            }
           }
         }
       }

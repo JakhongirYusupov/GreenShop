@@ -1,0 +1,260 @@
+@import "../../utils/index.scss";
+
+%custum-Title {
+  margin-bottom: 9px;
+  @include fontStyles(700, 17px, 16px, $primary-grey-color);
+}
+
+.footer {
+  margin: 100px 0 13px;
+
+  &-wrapper {
+    background-color: $primary-background-color;
+    border-bottom: 1px solid rgba(70, 163, 88, 0.2);
+  }
+
+  &-newsLetter {
+    padding: 32px 24px;
+    display: flex;
+    background-color: $primary-background-color;
+
+    &-products {
+      display: flex;
+      gap: 27px;
+
+      &-item:not(:last-child) {
+        border-right: 1px solid rgba(70, 163, 88, 0.1);
+      }
+
+      &-item {
+        width: 238px;
+
+        &>img {
+          margin-bottom: 18px;
+          width: 85px;
+          height: 85px;
+          object-fit: contain;
+          border-radius: 50%;
+          background-color: rgba(70, 163, 88, 0.13);
+        }
+
+        &>h4 {
+          @extend %custum-Title;
+        }
+
+        &>p {
+          width: 204px;
+          @include fontStyles(400, 14px, 22px, #727272);
+        }
+      }
+    }
+
+    &-join {
+      margin-left: 34px;
+
+      &>h4 {
+        @extend %custum-Title;
+        margin-bottom: 18px;
+        font-size: 18px;
+      }
+
+      &>p {
+        margin-top: 17px;
+        @include fontStyles(400, 13px, 22px, #727272);
+      }
+
+      &-form {
+        margin-top: 5px;
+        width: 100%;
+        max-width: 354px;
+        height: 40px;
+        display: flex;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.06);
+        border-radius: 6px;
+        background-color: $primary-light-color;
+        overflow: hidden;
+
+        &>button {
+          width: 85px;
+          height: 100%;
+          border: none;
+          @include fontStyles(700, 18px, 16px, $primary-light-color);
+          background-color: $primary-green-color;
+        }
+
+        &>input {
+          width: 100%;
+          max-width: 269px;
+          height: 100%;
+          border: none;
+          outline: none;
+          text-indent: 11px;
+
+          &::placeholder {
+            @include fontStyles(400, 14px, 16px, #ACACAC);
+          }
+        }
+      }
+    }
+  }
+
+  &-contact {
+    padding: 27px 24px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgba(70, 163, 88, 0.2);
+    border-bottom: 1px solid rgba(70, 163, 88, 0.2);
+    background: rgba(70, 163, 88, 0.1);
+
+    &-logo {
+      margin-right: 87px;
+
+      &>img {
+        width: 150px;
+        height: 34px;
+        object-fit: contain;
+      }
+    }
+
+    &-location {
+      margin-right: 60px;
+      display: flex;
+      align-items: center;
+      gap: 9px;
+
+      &>svg {
+        width: 20px;
+        height: 20px;
+        color: $primary-green-color;
+      }
+
+      &>p {
+        max-width: 176px;
+        @include fontStyles(400, 14px, 22px, $primary-grey-color);
+      }
+    }
+
+    &-email {
+      margin-right: 73px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      &>svg {
+        width: 20px;
+        height: 20px;
+        color: $primary-green-color;
+      }
+
+      &>a {
+        @include fontStyles(400, 14px, 22px, $primary-grey-color);
+      }
+    }
+
+    &-phone {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      &>svg {
+        width: 20px;
+        height: 20px;
+        color: $primary-green-color;
+      }
+
+      &>a {
+        @include fontStyles(400, 14px, 22px, $primary-grey-color);
+      }
+    }
+  }
+
+  &-links {
+    padding: 33px 23px;
+    display: flex;
+    background-color: $primary-background-color;
+
+    &-wrapper {
+      display: flex;
+    }
+
+    &-item {
+      max-width: 137px;
+      display: grid;
+      gap: 8px;
+
+      &>h4 {
+        @extend %custum-Title;
+        margin: 0;
+      }
+
+      &>a {
+        @include fontStyles(400, 14px, 30px, $primary-grey-color);
+      }
+    }
+
+    &-item:first-child {
+      margin-right: 166px;
+    }
+
+    &-item:nth-child(2) {
+      margin-right: 129px;
+    }
+
+    &-item:last-child {
+      margin-right: 173px;
+    }
+
+    &-socialMedia {
+      margin-left: 30px;
+
+      &-title {
+        margin-bottom: 20px;
+
+        &>h4 {
+          @extend %custum-Title;
+        }
+      }
+
+      &-medias {
+        margin-bottom: 33px;
+        display: flex;
+        gap: 10px;
+
+        &>a {
+          width: 32px;
+          height: 32px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid rgba(70, 163, 88, 0.2);
+          border-radius: 4px;
+
+          &>svg {
+            color: rgba(70, 163, 88, 0.6);
+          }
+        }
+      }
+
+      &-accept {
+        &>h4 {
+          @extend %custum-Title;
+          margin-bottom: 13px;
+        }
+
+        &>img {
+          width: 224px;
+          height: 26px;
+          object-fit: cover;
+        }
+      }
+    }
+
+  }
+
+  &-bottom-desc {
+    margin-top: 6px;
+    text-align: center;
+    @include fontStyles(400, 14px, 30px, $primary-grey-color);
+  }
+}

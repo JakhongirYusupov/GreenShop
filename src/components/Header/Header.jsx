@@ -2,11 +2,14 @@ import React from 'react';
 import "./Header.scss";
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../../images/header-logo.svg';
-import cart from '../../images/cart.svg';
+import cartIcon from '../../images/cart.svg';
 import { FiSearch } from 'react-icons/fi';
 import { HiOutlineLogout } from 'react-icons/hi';
+import { useSelector } from 'react-redux';
 
 export default function Header() {
+  const { cart } = useSelector(state => state);
+
   return (
     <header className='header'>
       <div className="container">
@@ -25,7 +28,12 @@ export default function Header() {
               <FiSearch className="header-actions-search-icon" />
             </div>
             <div className="header-actions-cart">
-              <img src={cart} alt="" />
+              <img src={cartIcon} alt="" />
+              {
+                cart.data.length ?
+                  <div><span>{cart.data.length}</span></div>
+                  : null
+              }
             </div>
             <div className="header-actions-login">
               <HiOutlineLogout className="header-actions-login-icon" />

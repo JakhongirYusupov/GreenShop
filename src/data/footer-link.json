@@ -1,0 +1,31 @@
+[
+  {
+    "categoryName": "My Account",
+    "links": [
+      "Our stores",
+      "Contact us",
+      "Career",
+      "Specials"
+    ]
+  },
+  {
+    "categoryName": "Help & Guide",
+    "links": [
+      "Help Center",
+      "How to Buy",
+      "Shipping & Delivery",
+      "Product Policy",
+      "How to Return"
+    ]
+  },
+  {
+    "categoryName": "Categories",
+    "links": [
+      "House Plants",
+      "Potter Plants",
+      "Seeds",
+      "Small Plants",
+      "Accessories"
+    ]
+  }
+]
