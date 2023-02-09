@@ -122,6 +122,11 @@
       &-priceRange {
         margin-bottom: 36px;
 
+        &>input {
+          width: 210px;
+          margin: 20px 0 15px;
+        }
+
         &>h3 {
           @extend %cutomCategoryTitle;
         }
@@ -148,6 +153,7 @@
           border-radius: 6px;
           @include fontStyles(700, 16px, 20px, $primary-light-color);
           background-color: $primary-green-color;
+          cursor: pointer;
         }
       }
 

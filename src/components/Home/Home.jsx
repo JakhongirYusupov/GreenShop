@@ -24,7 +24,7 @@ import { Pagination } from "swiper";
 
 export default function Home() {
   const [activeSortCategory, setactiveSortCategory] = useState(0);
-  const [activeSortPrice, setactiveSortPrice] = useState(300);
+  const [activeSortPrice, setactiveSortPrice] = useState(50);
   const [activeSortSize, setactiveSortSize] = useState(0);
   const [sortProductCategory, setsortProductCategory] = useState(1);
   const [products, setproducts] = useState(data);
@@ -164,10 +164,16 @@ export default function Home() {
                 </div>
                 <div className="main-product-sorting-priceRange">
                   <h3>Price Range</h3>
+                  <input type="range" min={50} max={1200}
+                    onChange={((a) => setactiveSortPrice((e) => e = a.target.value))}
+                  />
                   <div className="main-product-sorting-priceRange-price">
                     <span>Price: </span><strong>$0 - ${activeSortPrice}</strong>
                   </div>
-                  <button>Filter</button>
+                  <button onClick={(() => {
+                    let res = products.filter(({ price }) => { return +price <= activeSortPrice });
+                    setproducts(res);
+                  })}>Filter</button>
                 </div>
                 <div className="main-product-sorting-size">
                   <h3>Size</h3>
@@ -239,10 +245,10 @@ export default function Home() {
                       </div>
                       <div className="main-product-list-item-desc">
                         <p>{name}</p>
-                        <strong>{price}</strong>
+                        <strong>${price}</strong>
                         {
                           sale ?
-                            <span>{sale}</span>
+                            <span>${sale}</span>
                             : null
                         }
                       </div>
@@ -259,6 +265,7 @@ export default function Home() {
                         style={activePagination === i ? { "backgroundColor": "#46A358" } : null}>
                         <span style={activePagination === i ? { "color": "#FFFFFF" } : null}>{i + 1}</span>
                       </div>
+                      return null
                     })
                   }
                 </div>
